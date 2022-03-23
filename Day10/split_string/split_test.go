@@ -5,29 +5,25 @@ import (
 	"testing"
 )
 
-func TestSplit(t *testing.T) {
-	got := Split("abcbdef", "b")
-	want := []string{"a", "c", "def"}
-	if !reflect.DeepEqual(got, want) {
-		//测试用例失败了
-		t.Errorf("want:%v but got:%v\n", want, got)
+func Test4Split(t *testing.T) {
+	//定义一个测试用例类型
+	type test struct {
+		input string
+		sep   string
+		want  []string
 	}
-}
-
-func Test2Split(t *testing.T) {
-	got := Split("a:b:c:d", ":")
-	want := []string{"a", "b", "c", "d"}
-	if !reflect.DeepEqual(got, want) {
-		//测试用例失败了
-		t.Errorf("want:%v but got:%v\n", want, got)
+	//定义一个存储测试用例的切片
+	tests := []test{
+		{input: "a:b:c:d", sep: ":", want: []string{"a", "b", "c", "d"}},
+		{input: "a:b:c:d", sep: ",", want: []string{"a:b:c:d"}},
+		{input: "abcd", sep: "bc", want: []string{"a", "cd"}},
+		// {input: "沙河有沙又有河", sep: "沙", want: []string{"", "河有", "又有"}},
 	}
-}
-
-func Test3Split(t *testing.T) {
-	got := Split("abagababahkaj", "b")
-	want := []string{"a", "aga", "a", "ahkaj"}
-	if !reflect.DeepEqual(got, want) {
-		//测试用例失败了
-		t.Fatalf("want:%v but got:%v\n", want, got)
+	//遍历切片，逐一执行测试用例
+	for _, tc := range tests {
+		got := Split(tc.input, tc.sep)
+		if !reflect.DeepEqual(got, tc.want) {
+			t.Fatalf("want:%v but got:%v\n", tc.want, got)
+		}
 	}
 }
