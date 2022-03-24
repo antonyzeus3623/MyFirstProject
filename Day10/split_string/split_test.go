@@ -37,7 +37,7 @@ func BenchmarkSplit(b *testing.B) {
 
 //BenchmarkFib性能比较测试
 func benchmarkFib(b *testing.B, n int) {
-	for i := 0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ { //b.N 计算循环计数次数
 		Fib(n)
 	}
 }
