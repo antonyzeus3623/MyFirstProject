@@ -1,6 +1,8 @@
 package splitstring
 
-import "strings"
+import (
+	"strings"
+)
 
 //Split切割字符串
 //example
@@ -8,7 +10,7 @@ import "strings"
 
 func Split(str string, sep string) []string { //用sep去分割str
 	// str="babcbdef"   sep="b"
-	var ret []string
+	var ret = make([]string, 0, strings.Count(str, sep)+1) //申请内存
 	index := strings.Index(str, sep)
 	for index >= 0 {
 		ret = append(ret, str[:index])
