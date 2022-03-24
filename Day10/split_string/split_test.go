@@ -27,3 +27,10 @@ func Test4Split(t *testing.T) {
 		}
 	}
 }
+
+//BenchmarkSplit基准测试
+func BenchmarkSplit(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Split("a:b:c:d:e", ":")
+	}
+}
