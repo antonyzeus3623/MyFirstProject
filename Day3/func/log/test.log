@@ -1,0 +1,60 @@
+{"level":"info","ts":1650523441.454301,"msg":"0 10 30 60"}
+{"level":"info","ts":1650523441.454805,"msg":"10 20 40 70"}
+{"level":"info","ts":1650523441.454805,"msg":"5 1"}
+{"level":"info","ts":1650523441.4553084,"msg":"30"}
+{"level":"info","ts":1650523441.4553084,"msg":"the type of intSum3:func(int, int) int\n"}
+{"level":"info","ts":1650523441.455801,"msg":"the type of ret10:func(int, int) int\n"}
+{"level":"info","ts":1650523624.7508445,"msg":"0 10 30 60"}
+{"level":"info","ts":1650523624.7518218,"msg":"10 20 40 70"}
+{"level":"info","ts":1650523624.7518218,"msg":"5 1"}
+{"level":"info","ts":1650523624.7518218,"msg":"30"}
+{"level":"info","ts":1650523624.7523222,"msg":"the type of intSum3:func(int, int) int\n"}
+{"level":"info","ts":1650523624.7523222,"msg":"the type of ret10:func(int, int) int\n"}
+{"level":"info","ts":1650523640.0853732,"msg":"0 10 30 60"}
+{"level":"info","ts":1650523640.0862246,"msg":"10 20 40 70"}
+{"level":"info","ts":1650523640.0863726,"msg":"5 1"}
+{"level":"info","ts":1650523640.0863726,"msg":"30"}
+{"level":"info","ts":1650523640.0863726,"msg":"the type of intSum3:func(int, int) int"}
+{"level":"info","ts":1650523640.0863726,"msg":"the type of ret10:func(int, int) int"}
+{"level":"info","ts":1650523685.9067252,"msg":"0 10 30 60"}
+{"level":"info","ts":1650523685.907725,"msg":"10 20 40 70"}
+{"level":"info","ts":1650523685.908225,"msg":"5 1"}
+{"level":"info","ts":1650523685.908225,"msg":"30"}
+{"level":"info","ts":1650523685.908225,"msg":"the type of intSum3:func(int, int) int"}
+{"level":"error","ts":1650523685.9087253,"msg":"输入有误，Error: 无法识别的操作符"}
+{"level":"info","ts":1650523685.9087253,"msg":"the type of ret10:func(int, int) int"}
+2022-04-21T15:01:00.750+0800	INFO	0 10 30 60
+2022-04-21T15:01:00.787+0800	INFO	10 20 40 70
+2022-04-21T15:01:00.787+0800	INFO	5 1
+2022-04-21T15:01:00.787+0800	INFO	30
+2022-04-21T15:01:00.790+0800	INFO	the type of intSum3:func(int, int) int
+2022-04-21T15:01:00.792+0800	ERROR	输入有误，Error: 无法识别的操作符
+2022-04-21T15:01:00.793+0800	INFO	the type of ret10:func(int, int) int
+2022-04-21T15:01:14.608+0800	INFO	0 10 30 60
+2022-04-21T15:01:14.627+0800	INFO	10 20 40 70
+2022-04-21T15:01:14.627+0800	INFO	5 1
+2022-04-21T15:01:14.627+0800	INFO	30
+2022-04-21T15:01:14.627+0800	INFO	the type of intSum3:func(int, int) int
+2022-04-21T15:01:14.627+0800	ERROR	输入有误，Error: 无法识别的操作符
+2022-04-21T15:01:14.628+0800	INFO	the type of ret10:func(int, int) int
+2022-04-21T15:03:37.109+0800	INFO	0 10 30 60
+2022-04-21T15:03:37.136+0800	INFO	10 20 40 70
+2022-04-21T15:03:37.136+0800	INFO	5 1
+2022-04-21T15:03:37.136+0800	INFO	30
+2022-04-21T15:03:37.136+0800	INFO	the type of intSum3:func(int, int) int
+2022-04-21T15:03:37.136+0800	ERROR	输入有误，Error: 无法识别的操作符
+2022-04-21T15:03:37.136+0800	INFO	the type of ret10:func(int, int) int
+2022-04-21T15:05:24.379+0800	INFO	0 10 30 60
+2022-04-21T15:05:24.400+0800	INFO	10 20 40 70
+2022-04-21T15:05:24.400+0800	INFO	5 1
+2022-04-21T15:05:24.400+0800	INFO	30
+2022-04-21T15:05:24.400+0800	INFO	the type of intSum3:func(int, int) int
+2022-04-21T15:05:24.400+0800	ERROR	输入有误，Error: 无法识别的操作符
+2022-04-21T15:05:24.400+0800	INFO	the type of ret10:func(int, int) int
+2022-04-21T15:05:49.875+0800	INFO	0 10 30 60
+2022-04-21T15:05:49.901+0800	INFO	10 20 40 70
+2022-04-21T15:05:49.901+0800	INFO	5 1
+2022-04-21T15:05:49.901+0800	INFO	30
+2022-04-21T15:05:49.902+0800	INFO	the type of intSum3:func(int, int) int
+2022-04-21T15:05:49.902+0800	ERROR	输入有误，Error: 无法识别的操作符
+2022-04-21T15:05:49.902+0800	INFO	the type of ret10:func(int, int) int
