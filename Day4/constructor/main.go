@@ -27,6 +27,17 @@ func (p Person) Dream() {
 	zap.S().Debugf("%s的梦想是好好学习Go语言！", p.name)
 }
 
+type Person2 struct {
+	name   string
+	age    int8
+	dreams []string
+}
+
+func (p *Person2) SetDreams(dreams []string) {
+	p.dreams = make([]string, len(dreams))
+	copy(p.dreams, dreams)
+}
+
 //使用值接收者：传拷贝进去
 func (p Person) setAge2(newAge int8) {
 	p.age = newAge
@@ -46,6 +57,18 @@ func main() {
 	zap.S().Debug(p.age) // 18
 	p.setAge(20)
 	zap.S().Debug(p.age) // 20
+
+	p1 := Person2{
+		name: "小王子",
+		age:  20,
+	}
+	data := []string{"吃饭", "睡觉", "打豆豆"}
+	p1.SetDreams(data)
+	zap.S().Debug(p1.dreams)
+	data[1] = "不睡觉"
+	p1.SetDreams(data)
+	zap.S().Debug(p1.dreams)
+
 }
 
 func InitLogger() {
