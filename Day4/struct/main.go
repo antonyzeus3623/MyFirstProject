@@ -33,6 +33,22 @@ type student struct {
 	age  int
 }
 
+//嵌套结构体
+
+//Address 地址结构体
+type Address struct {
+	Province string
+	City     string
+}
+
+//User 用户结构体
+type User struct {
+	Name    string
+	Age     int
+	Gender  string
+	Address Address
+}
+
 func main() {
 	InitLogger()
 	//结构体实例化
@@ -100,6 +116,18 @@ func main() {
 	for k, v := range m {
 		zap.S().Debug(k, "=>", v.name)
 	}
+
+	//结构体嵌套
+	user1 := User{
+		Name:   "小王子",
+		Age:    20,
+		Gender: "男",
+		Address: Address{
+			Province: "四川省",
+			City:     "成都市",
+		},
+	}
+	zap.S().Debugf("%#v", user1)
 }
 
 func InitLogger() {
