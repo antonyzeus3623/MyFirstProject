@@ -1,6 +1,7 @@
 #忽略文件
 *.exe
 *.log
+*.txt
 /Day9
 /GoProject
 /Interface
