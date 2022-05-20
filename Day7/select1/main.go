@@ -31,7 +31,6 @@ func selectdemo2() {
 	case <-time.After(5 * time.Second):
 		return
 	}
-
 }
 
 func main() {
